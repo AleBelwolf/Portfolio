@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+/* -------------------------- Conf. Geral ----------------------------- */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+    height: 500vh;
+}
+body {
+    background-color: rgb(14, 13, 13);
+    color: white;
+}
+#screenMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgb(14, 13, 13);
+    padding: 10px 0px;
+}
+#screenBurguer {
+    display: flex;
+    justify-content: center;
+    
+    width: 70vw;
+    padding: 10px;
+    
+    background-color: #1342a0;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.screenTexto {
+    background-color: #2b2b2b;
+    padding: 5px 0px;
+    margin: 15px;
+}
+#screenProjeto {
+    background-color: #2b2b2b;
+    padding: 5px 0px;
+    margin: 15px;
+}
+/* -------------------------- Menu burguer ----------------------------- */
+#bordaBurguer {
+    margin-top: 30px;
+    background-color: white;
+}
+/* horizontal */
+div#bordaBurguer p:nth-child(1) {
+    position: absolute;
+    top: 0.1;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #2b2b2b, white);
+}
+div#bordaBurguer p:nth-child(3) {
+    position: absolute;
+    bottom: 0.1;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to , #2b2b2b, white);
+}
+#burguer {
+    background-color: #1342a0;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 60px;
+}
+a#burguer span {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+
+
+    background-color: white;
+    transition: 0.2s all ease;
+}
+/* Está é a posição em que deixamos nossos 'traços em branco' parecido ao menu burguer */
+a#burguer span:nth-child(1) {
+    transform: translateY(-10px);
+}
+a#burguer span:nth-child(2) {
+    transform: translateY(10px);
+}
+
+/* Está é a a posição que faz ao passar o mouse emcima :hover */
+a#burguer:hover span:nth-child(1) {
+    transform: translateY(-15px);
+}
+a#burguer:hover span:nth-child(2) {
+    transform: translateY(15px);
+}
+
+/* Quando se está clicado no burguer ele meio que sobe um pouco até desaparecer pois tem opacity 0  */
+a#burguer.active span:nth-child(1) {
+    transform: translateY(-30px);
+    opacity: 0;
+}
+a#burguer.active span:nth-child(2) {
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+/* Rotação para fazer um X */
+a#burguer.active span:nth-child(3), a#burguer:active span:nth-child(4) {
+    transform: rotate(0deg);
+    
+}
+a#burguer.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    
+}
+a#burguer.active span:nth-child(4) {
+    transform: rotate(45deg);
+    
+}
+/* -------------------------- Elementos do menu ----------------------------- */
+#menu {
+    display: none;
+}
+#itensMenu li {
+    list-style-type: none;
+    position: relative;
+    background-color: #2b2b2b;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 5px 0px;
+}
+ul#itensMenu li a {
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+
+    width: 100%;
+    padding: 10px 26vw;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+
+    color: white;
+    text-decoration: none;
+}
+ul#itensMenu li a:hover {
+    overflow: hidden;
+}
+#itensMenu li:hover::before {
+    border-radius: 0px 50px 50px 0px;
+    width: 110%;
+}
+#itensMenu li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    background-color: #f0f;
+    transition: .6s all ease-in-out;
+}
+#itensMenu li:nth-child(1)::before {
+    background-color: #0554F2;    
+}
+#itensMenu li:nth-child(2)::before {
+    background-color: #f1b504;    
+}
+#itensMenu li:nth-child(3)::before {
+    background-color: #e44134;    
+}
+#itensMenu li:nth-child(4)::before {
+    background-color: #38c45d;    
+}
+/* -------------------------- Perfil ----------------------------- */
+#fotoPerfil {
+    width:250px;
+    border-radius: 50%;
+    margin: 50px 0px;
+}
+/* -------------------------- Texto dinamico ----------------------------- */
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#wrapper #estatico {
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+#wrapper #dinamico li {
+    list-style: none;
+    font-size: 20px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    width: 29ch;
+    border-right: 2px solid;
+
+    animation: typing 3.5s steps(29), blinking 1s infinite step-end ;    
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@keyframes blinking {
+    50%{
+        border-color: transparent;
+    }
+}
+/* -------------------------- Sobre mim ----------------------------- */
+#tituloSobre {
+    display: flex;
+}
+#barraLateral {
+    margin-left: 5px;
+    border-left: 5px solid #0554F2;
+}
+#sobreMim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 10px;
+}
+ul p {
+    text-align: justify;
+    text-indent: 30px;
+    margin: 4px 20px;
+}
+.screenTexto h1 {
+    padding: 10px 0px 10px 10px;
+}
+#preContato a {
+    background-color: yellow;
+    border: 2px solid black;
+}
