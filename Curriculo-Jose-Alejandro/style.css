@@ -10,7 +10,7 @@
 }
 html {
     scroll-behavior: smooth;
-    height: 500vh;
+    height: auto;
 }
 body {
     background-color: rgb(14, 13, 13);
@@ -33,6 +33,17 @@ body {
     border: none;
     cursor: pointer;
 }
+.screenTexto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 20px auto;
+    margin-bottom: 0px;
+    background-color: #2b2b2b;
+    width: 90vw;
+    padding: 5px;
+}
 #bordaMenu {
     position: absolute;
     top: 5%;
@@ -42,22 +53,65 @@ body {
     overflow: hidden;
     border-radius: 20px;
 }
-.screenTexto {
+main h1 {
+    padding: 10px;
+}
+.emoji {
+    margin: 0px 7px 11px 0;
+}
+#barraLateralS {
     display: flex;
-    justify-content: center;
+    margin: 5px;
+    border-top: 3px solid #0554F2;
+    border-left: 3px solid #0554F2;
+}
+#barraLateralS2 {
+    display: flex;
+    font-size: 25px;
+    margin: 5px;
+    justify-content: flex-end;
+    border-right: 3px solid #0554F2;
+    border-bottom: 3px solid #0554F2;   
+} 
+#barraLateralP {
+    display: flex;
+    margin: 5px;
+    border-top: 3px solid #f1b504;
+    border-left: 3px solid #f1b504;
+}
+#barraLateralP2 {
+    display: flex;
+    font-size: 25px;
+    margin: 5px;
+    justify-content: flex-end;
+    border-right: 3px solid #f1b504;
+    border-bottom: 3px solid #f1b504;   
+} 
+#barraLateralF {
+    display: flex;
+    margin: 5px;
+    border-top: 3px solid #e44134;
+    border-left: 3px solid #e44134;
+}
+#barraLateralF2 {
+    display: flex;
+    font-size: 25px;
+    margin: 5px;
+    justify-content: flex-end;
+    border-right: 3px solid #e44134;
+    border-bottom: 3px solid #e44134;   
+}
+.paragrafo {
+    display: flex;
     flex-direction: column;
+    align-items: center;
 
-    margin: auto;
-    background-color: #2b2b2b;
-    width: 400px;
-    padding: 5px;
-}
-#screenProjeto {
-    background-color: #2b2b2b;
-    padding: 5px 0px;
-    margin: 15px;
-}
+    margin: 10px;
 
+    text-align: justify;
+    text-indent: 30px;
+    margin: 4px 20px;
+}
 /* -------------------------- Dark and light mode ----------------------------- */
 #dlMode {
     display: flex;
@@ -74,7 +128,7 @@ body {
     color: black;
     overflow: hidden;
   }
-  
+
   #checkbox_toggle {
     display: none;
   }
@@ -221,7 +275,7 @@ ul#itensMenu li a:hover {
     top: 0;
     bottom: 0;
     width: 10px;
-    background-color: #f0f;
+    background-color: #2b2b2b;
     transition: .6s all ease-in-out;
 }
 #itensMenu li:nth-child(1)::before {
@@ -256,11 +310,11 @@ ul#itensMenu li a:hover {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-66%, 90%);
-
+    transform: translate(-66%, 50%);
+    
     width: 300px;
     margin-left: -200px;
-    margin-top: -40px;
+    margin-top: 311px;
     border-radius: 80px;
 }
 .redes-sociais span {
@@ -366,25 +420,31 @@ ul#itensMenu li a:hover {
     }
 }
 /* -------------------------- Sobre mim ----------------------------- */
-#tituloSobre {
-    display: flex;
+/* -------------------------- Footer ----------------------------- */   
+footer {
+    background-color: #2b2b2b;
+    margin: 40px 0px 0px 0px;
+    padding: 2px;
 }
-#barraLateral {
-    margin-left: 5px;
-    border-left: 5px solid #0554F2;
-}
-#sobreMim {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+footer #container {
     margin: 10px;
+    display: flex;
+    justify-content: row;
+    justify-content: space-around;     
 }
-ul p {
+footer li {
+    list-style: none;
+}
+footer li a {
+    text-decoration: none;
+    color: white;
+}
+
+#idiomas {
+    margin: 0px 40px 0px 20px;
+    border-right: 2px solid ;
+}
+#contato {
     text-align: justify;
-    text-indent: 30px;
-    margin: 4px 20px;
-}
-.screenTexto h1 {
-    padding: 10px 0px 10px 10px;
+
 }

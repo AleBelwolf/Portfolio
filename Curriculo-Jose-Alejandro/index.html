@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <header>      
+    <header> <!-- Menu e perfil -->    
         <div id="screenMenu">
             <div id="dlMode">
                 <input id="checkbox_toggle" type="checkbox" class="check">
@@ -40,7 +40,7 @@
             <menu id="menu">
                 <ul id="itensMenu">
                     <li><a href="#">Sobre mim</a></li>
-                    <li><a href="#">Projeto</a></li>
+                    <li><a href="#">Projetos</a></li>
                     <li><a href="#">Formação</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
@@ -48,14 +48,14 @@
         </div> <!-- Fim menu -->
         <div id="perfil">
             <img src="imagens/Foto-Perfil.jpg" alt="Foto-Perfil" id="fotoPerfil">
-                <div class="redes-sociais">
-                    <span>Contatos</span>
-                    <nav id="preContato">
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    </nav>
-                </div>
+            <div class="redes-sociais">
+                <span>Contatos</span>
+                <nav id="preContato">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </nav>
+            </div>
         </div>
         <div id="wrapper">
             <div id="estatico">
@@ -64,38 +64,60 @@
             <div id="dinamico">
                 <ul>
                     <li>Estudante de Eng. da Computação</li>
-                    
                 </ul>
             </div>
-        </div> <!-- fim perfil -->
+        </div>      
+    </header> <!-- fim M, P --> 
+    <main> <!-- Sobre Mim, Projeto e Formação--> 
         <span id="sobre"></span>
         <div class="screenTexto">
-            <div id="tituloSobre">
-                <div id="barraLateral">
-                </div>
-                <h1>Sobre mim</h1>
+            <h1 id="barraLateralS">Sobre mim</h1>
+            <p class="paragrafo">Me considero capacitado, criativo e engajado, possuindo facilidade para lidar com pessoas e trabalhar em projetos seja individual ou coletivamente.</p>
+            <p class="paragrafo">Apesar da minha pouco experiência profisional, busco conhecer mais, aprender mais e me aperfeiçoar dia após dia buscando ser uma pessoa e um colaborador melhor sempre para agregar valor a empresa, bem como para os que estarão comigo.</p>
+            <div id="barraLateralS2"><span class="emoji">&#x1F680</span></div>
+        </div>
+        <div class="screenTexto">
+            <h1 id="barraLateralP">Projetos</h1>
+            <p class="paragrafo">Em construção</p>
+            <div id="barraLateralP2"><span class="emoji">&#x1F680</span></div>
+        </div>
+        <div class="screenTexto">
+            <h1 id="barraLateralF">Formação</h1>
+            <p class="paragrafo">Em construção</p>
+            <div id="idiomas">
+                <h2>Idiomas</h2>
+                <ul class="sci">
+                    <li><a href="#"></a>a</li>
+                    <li><a href="#"></a>a</li>
+                    <li><a href="#"></a>a</li>
+                    <li><a href="#"></a>a</li>
+                </ul>
             </div>
-            <ul id="sobreMim">
-                <p class="paragrafo">Me considero capacitado, criativo e engajado, possuindo facilidade para lidar com pessoas e trabalhar em projetos seja individual ou coletivamente.</p>
-                <p class="paragrafo">Apesar da minha pouco experiência profisional, busco conhecer mais, aprender mais e me aperfeiçoar dia após dia buscando ser uma pessoa e um colaborador melhor sempre para agregar valor a empresa, bem como para os que estarão comigo.</p>
-            </ul>
-        </div> <!-- Sobre Mim -->       
-    </header>
-    <body>
-        <div id="screenProjeto">
 
+            <div id="barraLateralF2"><span class="emoji">&#x1F680</span></div>
         </div>
-    </body>
-    <main>
-        <div class="container">
-            <div id="tituloSobre">
-                <div id="barraLateral">
-                </div>
-                <h1>Projeto</h1>
+    </main> <!-- Fim S, P, F -->  
+    <footer>
+        <div id="container">
+            <div id="contato">
+                <p>Agradeço desde já por acessar meu Portfólio e no possível manda um feedback sobre ou um apenas Olá, Tmj galera !</p>
+                <h2>Contatos</h2>
+                <ul>
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <p><a href="tel:+5511986257199">+55 11 986257199</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <p><a href="mailto:jose_20alejandro14@hotmail.com">jose_20alejandro14@hotmail.com</a></p>
+                    </li>
+                </ul>
             </div>
         </div>
-    </main>
-    
+    </footer>
+    <div class="copyrightText">
+        <p>Copyright 2023 Agência Belwolf. All Rights</p>
+    </div>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/483d157821.js" crossorigin="anonymous"></script>
 </body>
