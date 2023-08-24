@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <header> <!-- Menu e perfil -->    
+    <header> <!-- Menu -->    
         <div id="screenMenu">
             <div id="dlMode">
                 <input id="checkbox_toggle" type="checkbox" class="check">
@@ -39,10 +39,10 @@
             </div>            
             <menu id="menu">
                 <ul id="itensMenu">
-                    <li><a href="#">Sobre mim</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Formação</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
             </menu>
         </div> <!-- Fim menu -->
@@ -51,9 +51,9 @@
             <div class="redes-sociais">
                 <span>Contatos</span>
                 <nav id="preContato">
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://github.com/AleBelwolf" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 </nav>
             </div>
         </div>
@@ -66,21 +66,23 @@
                     <li>Estudante de Eng. da Computação</li>
                 </ul>
             </div>
-        </div>      
-    </header> <!-- fim M, P --> 
-    <main> <!-- Sobre Mim, Projeto e Formação--> 
-        <span id="sobre"></span>
+        </div> <!-- fim apenas perfil -->     
+    </header> <!-- fim Perfil e Menu --> 
+    <span id="sobre"></span>
+    <main> <!-- Sobre Mim --> 
         <div class="screenTexto">
             <h1 id="barraLateralS">Sobre mim</h1>
             <p class="paragrafo">Me considero capacitado, criativo e engajado, possuindo facilidade para lidar com pessoas e trabalhar em projetos seja individual ou coletivamente.</p>
             <p class="paragrafo">Apesar da minha pouco experiência profisional, busco conhecer mais, aprender mais e me aperfeiçoar dia após dia buscando ser uma pessoa e um colaborador melhor sempre para agregar valor a empresa, bem como para os que estarão comigo.</p>
             <div id="barraLateralS2"><span class="emoji">&#x1F680</span></div>
         </div>
+        <span id="projetos"></span>
         <div class="screenTexto">
             <h1 id="barraLateralP">Projetos</h1>
             <p class="paragrafo">Em construção</p>
-            <div id="barraLateralP2"><span class="emoji">&#x1F680</span></div>
+            <div id="barraLateralP2"><span class="emoji">&#x1F4DC</span></div>
         </div>
+        <span id="formacao"></span>
         <div class="screenTexto">
             <h1 id="barraLateralF">Formação</h1>
             <p class="paragrafo">Em construção</p>
@@ -93,14 +95,13 @@
                     <li><a href="#"></a>a</li>
                 </ul>
             </div>
-
-            <div id="barraLateralF2"><span class="emoji">&#x1F680</span></div>
+            <div id="barraLateralF2"><span class="emoji">&#x1F393</span></div>
         </div>
-    </main> <!-- Fim S, P, F -->  
+    </main> <!-- Fim S, P, F --> 
+    <span id="contact"></span> 
     <footer>
         <div id="container">
             <div id="contato">
-                <p>Agradeço desde já por acessar meu Portfólio e no possível manda um feedback sobre ou um apenas Olá, Tmj galera !</p>
                 <h2>Contatos</h2>
                 <ul>
                     <li>
@@ -111,12 +112,20 @@
                         <span><i class="fa-solid fa-envelope"></i></span>
                         <p><a href="mailto:jose_20alejandro14@hotmail.com">jose_20alejandro14@hotmail.com</a></p>
                     </li>
+                    <li>
+                        <span><i class="fa-brands fa-github"></i></span>
+                        <p><a href="https://github.com/AleBelwolf" target="_blank">github.com/AleBelwolf</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa-brands fa-linkedin"></i></span>
+                        <p><a href="https://www.linkedin.com/in/josé-alejandro-verduguez-loma-6564b526a/" target="_blank">José Alejandro Verduguez Loma</a></p>
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
     <div class="copyrightText">
-        <p>Copyright 2023 Agência Belwolf. All Rights</p>
+        <p>Este site foi criado por José Alejandro Verduguez Loma</p>
     </div>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/483d157821.js" crossorigin="anonymous"></script>
