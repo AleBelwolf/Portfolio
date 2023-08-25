@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <header> <!-- Menu -->      
+    <header>      
         <div id="screenMenu">
             <div id="bordaMenu">
                 <span class="animacao"></span>
@@ -73,35 +73,53 @@
             <div id="barraLateralS2"><span class="emoji">&#x1F680</span></div>
         </div> <!-- Sobre min -->
         <span id="projetos"></span>
-        <div class="screenTexto">
+        <section class="screenTexto">
             <h1 id="barraLateralP">Projetos</h1>
-            <section class="interface">
-                <div class="flex">
-                    <div class="img-port" style="background-image: url(imagens/foto-projeto-login.jpg);">
-                        <div class="overlay">
-                            <h2>Projeto Login</h2>
-                            <p id="pOverlay">Este é um projeto feito durante o curso do youtube CursoEmVideo, ensinando sobre os conceito de media query e responsividade</p>
-                            <span class="iconOverlay">
-                                <p class="tecn">Tecnologias Usadas</p>
-                                <i class="fa-brands fa-html5"></i>
-                                <i class="fa-brands fa-css3-alt"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="img-port" style="background-image: url(imagens/foto-projeto-login.jpg);">
-                        <div class="overlay">
-                            Projeto 2
-                        </div>
-                    </div>
-                    <div class="img-port" style="background-image: url(imagens/foto-projeto-login.jpg);">
-                        <div class="overlay">
-                            Projeto 3
-                        </div>
+            <div class="content flex">
+                <div class="img-port" style="background-image: url(imagens/foto-projeto-login.jpg);">
+                    <div class="overlay">
+                        <h2>Projeto Login</h2>
+                        <p id="pOverlay">Este é um projeto feito durante o webcurso do CursoEmVideo, ensinando sobre os conceito de media query e responsividade.</p>
+                        <span class="iconOverlay">
+                            <p class="tecn">Tecnologias Usadas</p>
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </span>
                     </div>
                 </div>
-            </section>
-            <div id="barraLateralP2"><span class="emoji">&#x1F4DC</span></div>
-        </div>
+                <div class="img-port" style="background-image: url(imagens/construção2.jpeg);">
+                    <div class="overlay">
+                        <h2>Projeto em Construção !</h2>
+                        <p id="pOverlay">O projeto está em fase de desenvolvimento !</p>
+                        <span class="iconOverlay">
+                            <p class="tecn">Tecnologias Usadas</p>
+                            <i class="">.</i>
+                            <i class="">.</i>
+                            <i class="">.</i>
+                        </span>
+                    </div>
+                </div>
+                <div class="img-port" style="background-image: url(imagens/construção.jpeg);">
+                    <div class="overlay">
+                        <h2>Projeto em Construção !</h2>
+                    </div>
+                </div>
+                <div class="img-port" style="background-image: url(imagens/construção2.jpeg);">
+                    <div class="overlay">
+                        <h2>Projeto em Construção !</h2>
+                    </div>
+                </div>
+                <div class="img-port" style="background-image: url(imagens/construção.jpeg);">
+                    <div class="overlay">
+                        <h2>Projeto em Construção !</h2>
+                    </div>
+                </div>
+            </div>
+            <button id="verMais" onclick="verMais()">Read more</button>
+            <div id="barraLateralP2">
+                <span class="emoji">&#x1F4DC</span>
+            </div>
+        </section> <!-- Projetos -->
         <span id="formacao"></span>
         <div class="screenTexto">
             <h1 id="barraLateralF">Formação</h1>
@@ -115,14 +133,16 @@
                     <li><a href="#"></a>a</li>
                 </ul>
             </div>
-            <div id="barraLateralF2"><span class="emoji">&#x1F393</span></div>
+            <div id="barraLateralF2">
+                <span class="emoji">&#x1F393</span>
+            </div>
         </div>
     </main> <!-- Fim S, P, F --> 
     <span id="contact"></span> 
     <footer>
         <div id="container">
             <div id="contato">
-                <h2>Contatos</h2>
+                <h1>Contatos</h1>
                 <ul>
                     <li>
                         <span><i class="fa-solid fa-phone"></i></span>
@@ -147,6 +167,7 @@
     <div class="copyrightText">
         <p>Este site foi criado por José Alejandro Verduguez Loma</p>
     </div>
+
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/483d157821.js" crossorigin="anonymous"></script>
 </body>
