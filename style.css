@@ -438,17 +438,16 @@ h2 {
 
         align-items: center;
         white-space: nowrap;
-        margin-top: 60px;
+        margin: 60px auto;
     }
 
     #wrapper #estatico {
-        font-size: 20.2px;
-        margin: auto;
+        font-size: 18.5px;
     }
 
     #wrapper #dinamico li {
         list-style: none;
-        font-size: 20px;
+        font-size: 17px;
 
         white-space: nowrap;
         overflow: hidden;
