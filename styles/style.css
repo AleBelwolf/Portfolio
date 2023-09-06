@@ -479,6 +479,9 @@ ul#itensMenu li a:hover {
 }
 
 /* ~ Projetos ~ */
+#linkPortfolio {
+    text-decoration: none;
+}
 .content {  
     height: 540px;
     overflow: hidden;   
