@@ -24,3 +24,13 @@ function verMais() {
         btnVerMais.textContent = 'Ver mais'
     }
 }
+document.addEventListener('scroll', ocultar)
+function ocultar() {
+    let btnTop = document.getElementById('btnTop')
+
+    if(window.scrollY > 10){
+        btnTop.style.display = "flex"
+    } else {
+        btnTop.style.display = "none"
+    }
+}

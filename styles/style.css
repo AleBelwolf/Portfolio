@@ -333,10 +333,7 @@ ul#itensMenu li a:hover {
     align-items: center;
     font-size: 23px;
 }
-#perfil ul {
-    display: flex;
-    flex-direction: column;
-}
+
 #perfil ul li {
     margin: -50px;
 }
@@ -348,6 +345,51 @@ ul#itensMenu li a:hover {
     top: 50%;
     left: 30%;
     transform: translate(-46%, 60%);
+}
+/* ~ Texto Dinamico ~ */
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    white-space: nowrap;
+    margin: 60px auto;
+
+    position: relative;
+    top: 0;
+    left: 46%;
+    transform: translate(-46%, 130px);
+}
+
+#wrapper #estatico {
+    font-size: 18.5px;
+}
+
+#wrapper #dinamico li {
+    list-style: none;
+    font-size: 17px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30ch;
+    border-right: 2px solid;
+
+    animation: typing 3.5s steps(30), blinking 1s infinite step-end;
+
+    transform: translate(0, 50px);
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
 }
 /* contatos perfil */
 .redes-sociais {
@@ -434,50 +476,6 @@ ul#itensMenu li a:hover {
 
 .redes-sociais:hover a:hover {
     color: white;
-}
-
-/* ~ Texto Dinamico ~ */
-#wrapper {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    align-items: center;
-    white-space: nowrap;
-    margin: 60px auto;
-
-    position: relative;
-    top: 50%;
-    left: 46%;
-    transform: translate(-46%, 500%);
-}
-
-#wrapper #estatico {
-    font-size: 18.5px;
-}
-
-#wrapper #dinamico li {
-    list-style: none;
-    font-size: 17px;
-
-    white-space: nowrap;
-    overflow: hidden;
-    width: 30ch;
-    border-right: 2px solid;
-
-    animation: typing 3.5s steps(30), blinking 1s infinite step-end;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-}
-
-@keyframes blinking {
-    50% {
-        border-color: transparent;
-    }
 }
 
 /* ~ Projetos ~ */
@@ -645,7 +643,6 @@ footer ul li a {
 footer a:hover {
     text-decoration: underline;
 }
-
 
 .copyrightText {
     margin-top: 4px;

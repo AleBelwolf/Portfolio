@@ -23,9 +23,6 @@
         left: 50%;
         transform: translate(-50%, 0%);
     }
-    #menu2 ul {
-        
-    }
     #itensMenu2 {
         display: flex;
         background-color: ;
@@ -72,6 +69,7 @@
     /* perfil e contatos */
     #perfil ul {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -105,11 +103,36 @@
     #wrapper #dinamico li {
         font-size: 22px;
         margin: auto;
+        transform: translate(0, 0);
     }
     #wrapper #estatico {
         font-size: 25px;
         margin: auto;
     }
-    
+    /* btn top */
+    #btnTop {
+        position: fixed;
+        background-color: #0554F2;
+        bottom: 35px;
+        right: 35px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .arrow {
+        border: solid white;
+        border-width: 0 7px 7px 0;
+        padding: 5px;
+        display: inline-block;
+    }
+    .up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+    }
 }
 
